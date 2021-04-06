@@ -1,0 +1,72 @@
+.add-todo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 5px;
+  column-gap: 2.25rem;
+  transition: 0.5s ease-in;
+}
+
+.add-todo input[type='checkbox'] {
+  visibility: hidden;
+}
+
+.add-todo input[type='text'] {
+  width: 100%;
+  caret-color: var(--bright-blue)
+}
+
+.add-todo span::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 17.8px);
+  left: 1.5rem;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--dark-grayish-blue);
+  cursor: pointer;
+  background: #fff;
+  z-index: 2;
+  transition: 0.5s ease-in;
+}
+
+.add-todo span::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 20.8px);
+  left: 21px;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  background: var(--check-bg);
+  display: none;
+}
+
+.add-todo input:focus + span::after {
+  display: block;
+}
+
+.add-todo input:focus + span::before {
+  border: none;
+}
+
+/* Error */
+
+.add-todo.error input[type='text']::placeholder{
+  color: red;
+}
+
+/* Dark Mode */
+
+.app.dark .add-todo {
+  background-color: var(--very-dark-desaturated-blue);
+}
+
+.app.dark .add-todo span::before {
+  background: var(--very-dark-desaturated-blue);
+}

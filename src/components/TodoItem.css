@@ -1,0 +1,128 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-top: 2rem;
+}
+
+.todo-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.6rem;
+  border-bottom: 2px solid var(--dark-grayish-blue);
+  column-gap: 2.25rem; 
+  transition: 0.5s ease-in;
+}
+
+.todo-item input[type='checkbox'] {
+  visibility: hidden;
+}
+
+.todo-item p {  
+  cursor: pointer;
+}
+
+.todo-item.completed p {
+  text-decoration: line-through;
+  color: var(--light-grayish-blue-dark2)
+}
+
+.todo-item span::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 17.8px);
+  left: 1.5rem;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--dark-grayish-blue);
+  cursor: pointer;
+  background: #fff;
+  z-index: 2;
+  transition: 0.5s ease-in;
+}
+
+.todo-item.completed span::before{
+  transition: 0.5s ease-in;
+  content: '✓';
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background: var(--check-bg);
+}
+
+
+
+.todo-item span::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 20.8px);
+  left: 21px;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  background: var(--check-bg);
+  display: none;
+}
+
+label:hover span::after {
+  display: block;
+}
+
+label:hover span::before {
+  border: none;
+}
+
+.todo-item img.cross{
+  display: none;
+}
+
+.todo-item:hover img.cross {
+  display: block;
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 1rem;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+
+.app.dark .todo-item {
+  background-color: var(--very-dark-desaturated-blue);
+}
+
+.app.dark .todo-item.completed p {
+  color: var(--very-dark-grayish-blue-dark1);
+}
+
+.app.dark .todo-item span::before {
+  background: var(--very-dark-desaturated-blue);
+}
+
+.app.dark .todo-item.completed span::before {
+  background: var(--check-bg)
+}
+
+.app.dark .todo-item span::after {
+  background: var(--check-bg);
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+  
+  .todo-item img.cross {
+    display: block;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 1rem;
+    cursor: pointer;
+  }
+}

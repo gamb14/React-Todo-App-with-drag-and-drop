@@ -1,0 +1,101 @@
+.footer-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1.6rem;
+  font-size: 1.3rem;
+  color: var(--dark-grayish-blue);
+  background-color: #fff;
+  height: 3.5rem;
+  transition: 0.5s ease-in;
+}
+
+.footer > div{
+  cursor: pointer;
+}
+
+.footer-filters{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.footer-filters p:first-of-type {
+  color: var(--bright-blue);
+}
+
+.footer-filters > p {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+}
+
+.footer-filters.mobile {
+  display: none;
+  height: 4rem;
+  padding: 0 1.6rem;
+  background-color: #fff;
+  color: var(--dark-grayish-blue);
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  width: auto;
+  justify-content: center;
+  column-gap: 3rem;
+  transition: 0.5s ease-in;
+}
+
+.footer p:hover {
+  transition: 0.5s ease-in;
+  color: var(--very-dark-grayish-blue-dark1);
+}
+
+.footer-filters.desktop.all p:nth-child(1) {
+  background-color: var(--light-grayish-blue-light);
+  transition: 0.3s ease-in;
+}
+
+.footer-filters.desktop.active p:nth-child(2), 
+.footer-filters.desktop.completed p:nth-child(3) {
+  background-color: var(--light-grayish-blue-light);
+  color: var(--very-dark-desaturated-blue);
+  transition: 0.3s ease-in;
+}
+
+/* Dark Mode */
+
+.app.dark .footer-inner {
+  background-color: hsl(235, 24%, 19%);
+}
+
+.app.dark .footer p:hover{
+  transition: 0.5s ease-in;
+  color: #fff;
+}
+
+.app.dark .footer-filters.desktop.all p:nth-child(1),
+.app.dark .footer-filters.desktop.active p:nth-child(2), 
+.app.dark .footer-filters.desktop.completed p:nth-child(3) {
+  background-color: var(--bright-blue);
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+  .footer-filters.desktop {
+    display: none;
+  }
+
+  .footer-filters.mobile{
+    display: flex;
+  }
+
+  .app.dark .footer-filters.mobile {
+    background-color: var(--very-dark-desaturated-blue);
+  }
+  
+}
