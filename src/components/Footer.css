@@ -25,7 +25,7 @@
   color: var(--bright-blue);
 }
 
-.footer-filters > p {
+.footer-filters.desktop > p {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -35,13 +35,14 @@
 
 .footer-filters.mobile {
   display: none;
-  height: 4rem;
+  height: 2.25rem;
   padding: 0 1.6rem;
   background-color: #fff;
   color: var(--dark-grayish-blue);
   margin-top: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   width: auto;
+  align-items: center;
   justify-content: center;
   column-gap: 3rem;
   transition: 0.5s ease-in;
@@ -86,6 +87,12 @@
 /* Media Queries */
 
 @media (max-width: 900px) {
+
+  .footer-inner {
+    height: 2.25rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
   .footer-filters.desktop {
     display: none;
   }
@@ -97,5 +104,7 @@
   .app.dark .footer-filters.mobile {
     background-color: var(--very-dark-desaturated-blue);
   }
+
+
   
 }

@@ -126,3 +126,9 @@ label:hover span::before {
     cursor: pointer;
   }
 }
+
+@media (max-width: 450px) {
+  .todo-item {
+    padding: 1rem;
+  }
+}

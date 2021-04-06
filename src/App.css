@@ -26,12 +26,12 @@ input {
 
 .app.light {
   background : var(--light-grayish-blue-light) url('./images/bg-desktop-light.jpg') no-repeat;
-  background-size: 100% 33%;
+  background-size: 100% 300px;
 }
 
 .app.dark {
   background : var(--very-dark-blue) url('./images/bg-desktop-dark.jpg') no-repeat;
-  background-size: 100% 33%;
+  background-size: 100% 300px;
   color: var(--light-grayish-blue-dark2);
 }
 
@@ -47,6 +47,22 @@ input {
   .container {
     width: 90%;
     min-width: 0;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
   }
 }
+
+@media (max-width: 450px) {
+  .app {
+  font-size: 1.2rem;
+  }
+
+  .app.light {
+    background-image: url('./images/bg-mobile-light.jpg');
+    background-size: 100% 220px;
+  }
+
+  .app.dark {
+    background-image: url('./images/bg-mobile-dark.jpg');
+    background-size: 100% 220px;
+  }
+} 

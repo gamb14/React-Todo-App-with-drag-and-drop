@@ -15,3 +15,10 @@ header h1 {
 header img {
   cursor: pointer;
 }
+
+@media (max-width: 450px) {
+  header {
+  margin-bottom: 2rem;
+  }
+
+}

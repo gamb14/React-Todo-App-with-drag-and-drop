@@ -70,3 +70,12 @@
 .app.dark .add-todo span::before {
   background: var(--very-dark-desaturated-blue);
 }
+
+
+/* Media Queries */
+
+@media (max-width: 450px) {
+  .add-todo {
+    padding: 1rem;
+  }
+}
