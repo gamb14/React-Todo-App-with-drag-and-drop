@@ -52,7 +52,7 @@ input {
 
 @media (max-width: 450px) {
   .app {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     position: relative;
   }
 

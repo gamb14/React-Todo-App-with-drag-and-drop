@@ -26,16 +26,16 @@ header img {
 
 @media (max-width: 450px) {
   header {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   header div {
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
   }
 
   header img {
