@@ -11,7 +11,6 @@
 input {
   font-size: inherit;
   font-family: inherit;
-  outline: none;
   border: none;
   color: inherit;
   background-color: inherit;
@@ -53,17 +52,17 @@ input {
 
 @media (max-width: 450px) {
   .app {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     position: relative;
   }
 
   .app.light {
     background-image: url('./images/bg-mobile-light.jpg');
-    background-size: 100% 220px;
+    background-size: 100% 160px;
   }
 
   .app.dark {
     background-image: url('./images/bg-mobile-dark.jpg');
-    background-size: 100% 220px;
+    background-size: 100% 160px;
   }
 } 

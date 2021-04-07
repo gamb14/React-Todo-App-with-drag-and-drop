@@ -49,7 +49,7 @@ const App = () => {
 
                 <Draggable key={ todo.id } draggableId={ todo.id } index= {index}>
                   {(provided) => (
-                    <div className='wrapper' {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef} >
+                    <div className='wrapper' {...provided.draggableProps} {...provided.dragHandleProps}  tabIndex='-1' ref={provided.innerRef} >
                       <TodoItem todo={ todo } setTodoList={ setTodoList } />
                     </div>
                   )}
@@ -61,7 +61,7 @@ const App = () => {
 
                 <Draggable key={ todo.id } draggableId={ todo.id } index= {index}>
                   {(provided) => (
-                    <div className='wrapper' {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef} >
+                    <div className='wrapper' {...provided.draggableProps} {...provided.dragHandleProps} tabIndex='-1' ref={provided.innerRef} >
                       <TodoItem todo={ todo } setTodoList={ setTodoList } />
                     </div>
                     )}
@@ -73,7 +73,7 @@ const App = () => {
 
                 <Draggable key={ todo.id } draggableId={ todo.id } index= {index}>
                   {(provided) => (
-                    <div className='wrapper' {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef} >
+                    <div className='wrapper' {...provided.draggableProps} {...provided.dragHandleProps} tabIndex='-1' ref={provided.innerRef} >
                       <TodoItem todo={ todo } setTodoList={ setTodoList } />
                     </div>
                   )}

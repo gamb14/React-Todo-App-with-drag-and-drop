@@ -12,6 +12,14 @@ header h1 {
   font-size: 2.5rem;
 }
 
+header div { 
+  outline: none;
+}
+
+header div:focus-visible{
+  outline: 3px solid var(--bright-blue);
+}
+
 header img {
   cursor: pointer;
 }
@@ -21,4 +29,16 @@ header img {
   margin-bottom: 2rem;
   }
 
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header div {
+    height: 20px;
+    width: 20px;
+  }
+
+  header img {
+    width: 100%;
+  }
 }
