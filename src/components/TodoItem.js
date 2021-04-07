@@ -1,7 +1,7 @@
 import './TodoItem.css'
 import {useState} from 'react'
 
-const TodoItem = ({todo, setTodoList}) => {
+const TodoItem = ({todo, setTodoList }) => {
 
   const [isChecked, setIsChecked] = useState(false);
 
@@ -25,14 +25,16 @@ const TodoItem = ({todo, setTodoList}) => {
   }
   
   return (
-      <div className={`todo-item ${todo.isCompleted ? 'completed' : ''}`} >
-        <label>
-          <input onClick={handleChange} type="checkbox"/>
-          <span></span>
-        </label>
-        <p onClick={handleChange}> { todo.todoText } </p>
-        <img onClick={() => removeItem(todo.id)} src="./images/icon-cross.svg" className='cross' alt="cross"  />
-      </div>
+     
+        <div className={`todo-item ${todo.isCompleted ? 'completed' : ''}`} >
+          <label>
+            <input onClick={handleChange} type="checkbox"/>
+            <span></span>
+          </label>
+          <p onClick={handleChange}> { todo.todoText } </p>
+          <img onClick={() => removeItem(todo.id)} src="./images/icon-cross.svg" className='cross' alt="cross"  />
+        </div>
+      
   );
 }
 

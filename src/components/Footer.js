@@ -31,6 +31,10 @@ const Footer = ({ todoList, setTodoList, activeTodoList, todoFilter, setTodoFilt
         <p onClick={ () => setTodoFilter('active') }>Active</p>
         <p onClick={ () => setTodoFilter('completed') }>Completed</p>
       </div>
+
+      <div className="footer-drag-drop">
+        Drag and drop to reorder list
+      </div>
     </div>
   );
 }

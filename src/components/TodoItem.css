@@ -5,6 +5,16 @@
   margin-top: 2rem;
 }
 
+.todo-list {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.todo-item:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
 .todo-item {
   display: flex;
   position: relative;
@@ -93,6 +103,10 @@ label:hover span::before {
 }
 
 /* Dark Mode */
+
+.app.dark .todo-list {
+  background-color: var(--very-dark-desaturated-blue);
+}
 
 .app.dark .todo-item {
   background-color: var(--very-dark-desaturated-blue);
