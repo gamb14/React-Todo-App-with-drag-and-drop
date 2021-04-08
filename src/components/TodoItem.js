@@ -35,7 +35,7 @@ const TodoItem = ({todo, setTodoList }) => {
      
         <div className={`todo-item ${todo.isCompleted ? 'completed' : ''}`} >
           <label>
-            <input onClick={handleChange} type="checkbox" ariaLabel='Change the checked Value' />
+            <input onClick={handleChange} type="checkbox" aria-label='Change the checked Value' />
             <span></span>
           </label>
           <p tabIndex='0' onClick={handleChange} onKeyDown={handleKeyDown}> { todo.todoText } </p>

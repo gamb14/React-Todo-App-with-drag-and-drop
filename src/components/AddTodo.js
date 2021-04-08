@@ -31,11 +31,11 @@ const AddTodo = ({setTodoList}) => {
   return (
     <form onSubmit={handleSubmit}>
       <div className={`add-todo ${ showError ? 'error' : ''}`  } >
-        <input type="checkbox" ariaLabel='Add todo' />
+        <input type="checkbox" aria-label='Add todo' />
         <input 
           type="text"
           value={todoName}
-          ariaLabel='Add todo'
+          aria-label='Add todo'
           onChange={ (e) => setTodoName(e.target.value) }
           placeholder={ showError ? 'Field cannot be empty' : 'Create a new todo...' }
         />
