@@ -35,6 +35,7 @@ const AddTodo = ({setTodoList}) => {
         <input 
           type="text"
           value={todoName}
+          title= 'Add Todo'
           aria-label='Add todo'
           onChange={ (e) => setTodoName(e.target.value) }
           placeholder={ showError ? 'Field cannot be empty' : 'Create a new todo...' }
