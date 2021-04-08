@@ -35,12 +35,12 @@
 
 .footer-filters.mobile {
   display: none;
-  height: 2rem;
+  height: 1.75rem;
   padding: 0 1.6rem;
   background-color: #fff;
   color: var(--dark-grayish-blue);
   margin-top: 1.2rem;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   width: auto;
   align-items: center;
   justify-content: center;
