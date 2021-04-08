@@ -35,7 +35,7 @@
 
 .footer-filters.mobile {
   display: none;
-  height: 2.2rem;
+  height: 2rem;
   padding: 0 1.6rem;
   background-color: #fff;
   color: var(--dark-grayish-blue);
@@ -108,10 +108,11 @@
 @media (max-width: 900px) {
 
   .footer-inner {
-    height: 2rem;
+    height: 1.75rem;
     padding: 0 1rem;
     font-size: 0.85rem;
   }
+
   .footer-filters.desktop {
     display: none;
   }

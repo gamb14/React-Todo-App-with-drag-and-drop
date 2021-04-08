@@ -152,22 +152,22 @@ label:hover span::before {
   }
 
   .todo-item {
-    padding: 0.8rem 0.4rem;
-    column-gap: 1.2rem;
+    padding: 0.6rem 0.4rem;
+    column-gap: 1.6rem;
   }
 
   .todo-item span::before {
     height: 22px;
     width: 22px;
     top: calc(50% - 12.3px);
-    left: 0.6rem;
+    left: 1rem;
   }
   
   .todo-item span::after {
     height: 24px;
     width: 24px;
     top: calc(50% - 13.5px);
-    left: 8.6px;
+    left: 15px;
   }
 
   .todo-item img.cross {
