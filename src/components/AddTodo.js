@@ -31,7 +31,7 @@ const AddTodo = ({setTodoList}) => {
   return (
     <form onSubmit={handleSubmit}>
       <div className={`add-todo ${ showError ? 'error' : ''}`  } >
-        <input type="checkbox" aria-label='Add todo' />
+        <input type="checkbox" ariaLabel='Add todo' />
         <input 
           type="text"
           value={todoName}
