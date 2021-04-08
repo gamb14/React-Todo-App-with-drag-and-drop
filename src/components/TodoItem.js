@@ -30,6 +30,12 @@ const TodoItem = ({todo, setTodoList }) => {
   const removeItem = (id) => {
     setTodoList(prevTodoList => prevTodoList.filter(todo => todo.id !== id))
   }
+
+  const removeItemKeyDown = (e,id) => {
+    if(e.code === 'Space' || e.code === 'Enter') {
+      removeItem(id)
+    }
+  }
   
   return (
      
@@ -39,7 +45,7 @@ const TodoItem = ({todo, setTodoList }) => {
             <span></span>
           </label>
           <p tabIndex='0' onClick={handleChange} onKeyDown={handleKeyDown}> { todo.todoText } </p>
-          <img onClick={() => removeItem(todo.id)} src="./images/icon-cross.svg" className='cross' alt="cross"  />
+          <img tabIndex= '0' onClick={() => removeItem(todo.id)} onKeyDown={ e => removeItemKeyDown(e, todo.id)} src="./images/icon-cross.svg" className='cross' alt="cross"  />
         </div>
       
   );
